@@ -27,7 +27,7 @@
 1. Run `p-automator` inside the docker image to create the Ops Manager VM
 
     ```bash
-    docker run -it --rm -v $PWD../:/workspace -w /workspace/opsman-director platform-automation-image \
+    docker run -it --rm -v $PWD/..:/workspace -w /workspace/opsman-director platform-automation-image \
       p-automator create-vm \
         --config opsman-config.yml \
         --image-file ../artifacts/ops-manager*.yml \
