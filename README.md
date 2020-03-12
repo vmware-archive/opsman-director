@@ -34,7 +34,7 @@
         --vars-file ../terraform-outputs.yml
     ```
 
-1. Configure a `.envrc` file with these four environment variables.
+1. Configure a `.envrc` file with these environment variables.
    Choose a username, password, and decryption passphrase for your new Ops Manager.
 
     - `OM_TARGET` (Ops Manager URL)
@@ -43,14 +43,14 @@
     - `OM_DECRYPTION_PASSPHRASE`
     - `OM_SKIP_SSL_VALIDATION` (set it to true if using a self-signed certificate)
 
+    Use `envrc.example` as a template.
+
     Make sure to `direnv allow` before proceeding to the next step.
 
 1. Configure authentication to Ops Manager
 
     ```bash
     om --env env.yml configure-authentication \
-      --username ${OM_USERNAME} \
-      --password ${OM_PASSWORD} \
       --decryption-passphrase ${OM_DECRYPTION_PASSPHRASE}
     ```
 

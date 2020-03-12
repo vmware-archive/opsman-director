@@ -1,0 +1,7 @@
+#!/bin/sh
+
+export OM_TARGET=https://opsmanager.example.com/
+export OM_USERNAME=admin
+export OM_PASSWORD=please-change-me
+export OM_DECRYPTION_PASSPHRASE="please change me too"
+export OM_SKIP_SSL_VALIDATION=true
